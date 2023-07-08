@@ -1,6 +1,6 @@
 function renderCarrito() {
     const carrito = cargarCarrito();
-    var render = "";
+    let render = "";
     if (totalProductos() > 0) {
       render = `
         <table class="table table-striped">
@@ -63,6 +63,6 @@ function renderCarrito() {
     }
     const tabla = document.getElementById("tablaCarrito");
     tabla.innerHTML = render;
-  }
-  renderBotonCarrito();
-  renderCarrito();
+}
+renderBotonCarrito();
+renderCarrito();
